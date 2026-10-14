@@ -36,7 +36,8 @@
     .nav-links a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color .2s ease; }
     .nav-links a:hover { color: var(--wine); }
     .nav-cta { padding: 11px 16px; border-radius: 999px; background: var(--wine); color: white !important; }
-    .hero { display: grid; grid-template-columns: .91fr 1.09fr; min-height: 540px; margin: 28px 0 0; overflow: hidden; border-radius: 24px; background: #eee3db; }
+    .hero-shell { margin: 28px auto 0; }
+    .hero { display: grid; grid-template-columns: .91fr 1.09fr; min-height: 540px; margin: 0; overflow: hidden; border-radius: 24px; background: #eee3db; }
     .hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(34px, 6vw, 76px); }
     .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--wine); font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
     .eyebrow::before { width: 25px; height: 1px; background: var(--rose); content: ""; }
@@ -97,7 +98,8 @@
       .brand-mark { width: 35px; height: 35px; }
       .brand-name { font-size: 10px; }
       .nav-cta { padding: 10px 13px; font-size: 12px !important; }
-      .hero { margin-top: 16px; border-radius: 18px; }
+      .hero-shell { margin-top: 16px; }
+      .hero { border-radius: 18px; }
       .hero-copy { padding: 38px 25px 32px; }
       h1 { font-size: 45px; }
       .hero-copy p { font-size: 14px; }
@@ -136,7 +138,8 @@
   </header>
 
   <main>
-    <section class="wrap hero" id="inicio" aria-labelledby="hero-title">
+    <div class="wrap hero-shell">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
         <span class="eyebrow">Ballet · danza · movimiento</span>
         <h1 id="hero-title">Todo para bailar. Todo para brillar.</h1>
@@ -150,6 +153,7 @@
         <img src="images/mvi-dancewear-hero.png" alt="Bailarina adulta ensaya en un estudio iluminado, con leotardo negro y falda rosa" fetchpriority="high">
       </div>
     </section>
+    </div>
 
     <div class="wrap intro-strip" aria-label="Especialidades MVI">
       <span>Diseñado para la clase</span><span>Listo para el escenario</span><span>Hecho para moverte</span>
