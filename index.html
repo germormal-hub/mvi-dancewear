@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f3f1">
-  <meta name="description" content="Encuentra MVI Dance Wear en Mercado Libre e Instagram, y conoce Maro Fitnesswear.">
+  <meta name="description" content="Ropa, calzado y accesorios para ballet y danza con MVI Dance Wear. Descubre también Maro Fitnesswear.">
   <title>MVI Dance Wear | Danza con estilo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
     h1 { margin:10px 0 10px; font-family:"Playfair Display",serif; font-size:clamp(37px,7vw,62px); font-weight:500; line-height:1; letter-spacing:-.04em; }
     .hero p { max-width:465px; margin:0 auto; color:var(--muted); font-size:15px; line-height:1.65; }
     .section-label { margin:35px 2px 13px; color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
-    .links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
     .card { min-height:164px; display:flex; flex-direction:column; justify-content:space-between; padding:21px; border:1px solid var(--line); border-radius:18px; background:var(--white); color:inherit; text-decoration:none; transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease; }
     .card:hover { transform:translateY(-3px); border-color:#cdaeb0; box-shadow:0 12px 28px #4f302010; }
     .card:focus-visible { outline:2px solid var(--wine); outline-offset:3px; }
@@ -37,6 +37,7 @@
     .name { display:block; font-size:16px; font-weight:700; letter-spacing:-.02em; }
     .detail { display:block; margin-top:5px; color:var(--muted); font-size:13px; }
     .subheading { margin:36px 2px 13px; font-family:"Playfair Display",serif; font-size:24px; font-weight:500; }
+    .brand-copy { max-width:680px; margin:-3px 2px 16px; color:var(--muted); font-size:14px; line-height:1.7; }
     .secondary { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:78px; padding:17px 20px; border:1px solid var(--line); border-radius:16px; background:#f1e8e5; color:inherit; text-decoration:none; transition:background .18s ease; }
     .secondary:hover { background:#eadbd8; }
     footer { padding-top:38px; color:#8b817f; text-align:center; font-size:12px; }
@@ -52,26 +53,27 @@
       <div class="hero-inner">
         <div class="monogram" aria-hidden="true">MVI</div>
         <div class="kicker">Danza · elegancia · movimiento</div>
-        <h1>Tu pasión, en movimiento</h1>
-        <p>Prendas para acompañarte en cada clase, ensayo y escenario. Encuentra MVI Dance Wear y descubre nuestras marcas.</p>
+        <h1>Todo para bailar</h1>
+        <p>Somos una tienda especializada en ballet y danza. Encuentra ropa, calzado y accesorios para tus clases, ensayos y presentaciones: desde leotardos, tutús y mallas hasta zapatillas y artículos para bailar.</p>
       </div>
     </header>
 
-    <div class="section-label">Encuentra MVI Dance Wear</div>
+    <div class="section-label">MVI Dance Wear · Ballet y danza</div>
     <nav class="links" aria-label="MVI Dance Wear">
       <a class="card" href="https://www.mercadolibre.com.mx/pagina/gerarmormal" target="_blank" rel="noopener noreferrer">
         <span class="card-top"><span class="icon" aria-hidden="true">MVI</span><span class="arrow" aria-hidden="true">↗</span></span>
-        <span><span class="name">Tienda en Mercado Libre</span><span class="detail">Explora la colección y compra en línea</span></span>
+        <span><span class="name">Compra en Mercado Libre</span><span class="detail">Ropa, zapatillas y accesorios de danza</span></span>
       </a>
       <a class="card" href="https://www.instagram.com/mvi.dancewear/" target="_blank" rel="noopener noreferrer">
         <span class="card-top"><span class="icon" aria-hidden="true">IG</span><span class="arrow" aria-hidden="true">↗</span></span>
-        <span><span class="name">MVI en Instagram</span><span class="detail">Novedades, inspiración y más</span></span>
-      </a>
-      <a class="card" href="https://www.instagram.com/maro.fitnesswear/" target="_blank" rel="noopener noreferrer">
-        <span class="card-top"><span class="icon" aria-hidden="true">MF</span><span class="arrow" aria-hidden="true">↗</span></span>
-        <span><span class="name">Maro Fitnesswear</span><span class="detail">Síguenos en Instagram</span></span>
+        <span><span class="name">Síguenos en Instagram</span><span class="detail">Novedades y el universo MVI Dance Wear</span></span>
       </a>
     </nav>
+    <h2 class="subheading">También descubre Maro Fitnesswear</h2>
+    <p class="brand-copy">Ropa deportiva para acompañarte en tus entrenamientos y en tu día a día. Explora la propuesta fitness de Maro y encuentra inspiración para moverte con comodidad y estilo.</p>
+    <a class="secondary" href="https://www.instagram.com/maro.fitnesswear/" target="_blank" rel="noopener noreferrer">
+      <span class="identity"><span class="icon" aria-hidden="true">MF</span><span><span class="name">Maro Fitnesswear</span><span class="detail">Conoce la marca en Instagram</span></span></span><span class="arrow" aria-hidden="true">↗</span>
+    </a>
     <footer>© <span id="year"></span> MVI Dance Wear</footer>
   </main>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
